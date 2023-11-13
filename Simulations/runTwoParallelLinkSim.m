@@ -18,7 +18,7 @@ function result = runTwoParallelLinkSim(K, p, N)
 
             r1 = rand;
             r2 = rand;
-            txAttemptCount = txAttemptCount + 2;
+            txAttemptCount = txAttemptCount + 2; % count first 2 attempts
 
             % while packet transmissions is not successful (r1 < p)
             while r1 < p
