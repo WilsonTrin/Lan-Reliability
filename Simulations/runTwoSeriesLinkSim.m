@@ -21,7 +21,7 @@ function result = runTwoSeriesLinkSim(K,p,N)
             txAttemptCount = txAttemptCount + 1; % count 1st attempt
             
             % while packet transmissions is not successful (r1 < p OR r2 < p)
-            while r1 < p || r2 < p %contimues attempting while there is a fail on 1st or second link
+            while r1 < p || r2 < p
                 r1 = rand; % transmit again, generate new success check value r1
                 r2 = rand; % transmit again, generate new success check value r2
                 txAttemptCount = txAttemptCount + 1; % count additional attempt
