@@ -1,4 +1,4 @@
-%% Function runTwoParallelLinkSim()
+%% Function runCompoundNetworkSim()
 % Parameters
 %  K - the number of packets in the application message
 %  p - the probability of failure 
@@ -6,7 +6,7 @@
 %
 % Returns: the average numeric result across the total simulations
 
-function result = runTwoParallelLinkSim(K, p, N)
+function result = runCompoundNetworkSim(K, p, N)
 
     simResults = zeros(1,N); % a place to store the result of each simulation
     
