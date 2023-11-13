@@ -1,2 +1,0 @@
-# Lan-Reliability
-Currently empty
