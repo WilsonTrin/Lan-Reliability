@@ -23,10 +23,10 @@ calculatedResults = zeros(1,100); % Calculated results initialization
 % Build single plot
 figure('Position', [100, 100, 800, 600]); % Create a figure with a set size
 % (Note: Calculated results on Y didn't make sense to be there)
-semilogy(p_vals, simulatedResults, colorC(K_index), 'MarkerSize', 6); % Plot for the calculated results through p_vals
+semilogy(p_vals, simulatedResults, colorC(K_index), 'MarkerSize', 6); % Plot for the calculated results through p_vals ____
 hold on; % Retains the above plots so that they don't get overwritten
 % (Note: Simulated results on Y didn't make sense to be there)
-semilogy(p_vals, calculatedResults, colorS(K_index), 'LineWidth', 1); % Plot for the simulated results through p_vals
+semilogy(p_vals, calculatedResults, colorS(K_index), 'LineWidth', 1); % Plot for the simulated results through p_vals OOOO
 
 % Label the plot
 title("Relations between Average Transmissions and Probability of Failure for Packets = " + K); % Big Title
@@ -38,10 +38,10 @@ legend('Simulated', 'Calculated'); % Helpful corner box
 bigFigure = figure(6); % Here to append proggressive results to a last figure
 bigFigure.Position = [100, 100, 800, 600]; % Appended figure's size
 % (Note: Calculated results on Y didn't make sense to be there)
-semilogy(p_vals, simulatedResults, colorC(K_index), 'MarkerSize', 5); % Plot for the calculated results through p_vals 
+semilogy(p_vals, simulatedResults, colorC(K_index), 'MarkerSize', 5); % Plot for the calculated results through p_vals ____
 hold on; % Retains the above plots so that they don't get overwritten
 % (Note: Simulated results on Y didn't make sense to be there)
-semilogy(p_vals, calculatedResults, colorS(K_index), 'LineWidth', 1); % Plot for the calculated results through p_vals
+semilogy(p_vals, calculatedResults, colorS(K_index), 'LineWidth', 1); % Plot for the simulated results through p_vals OOOO
 
 % Label the plot
 title("Relations between Average Transmissions and Probability of Failure"); % The Bigger's Big Title
